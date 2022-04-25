@@ -1,0 +1,19 @@
+* {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+h1 {
+    text-align: center;
+    font-size: 45px;
+}
+
+.navbar {
+    background-color: darkslategrey;
+    color:white;
+    
+}
+
+.container{
+    background-color: darkslategrey;
+    color: white;
+}
