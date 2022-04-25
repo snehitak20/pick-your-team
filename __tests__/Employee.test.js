@@ -3,10 +3,10 @@ const Employee = require('../lib/Employee')
 describe('Employee Class', () => {
     describe('Initialization', () => {
         it('Should create an object with an id and name', () => {
-            const employee = new Employee(123, 'Bob')
+            const employee = new Employee(123, 'Twiggy')
 
             expect(employee.id).toEqual(123);
-            expect(employee.name).toEqual('Bob');
+            expect(employee.name).toEqual('Twiggy');
         });
     });
 });
