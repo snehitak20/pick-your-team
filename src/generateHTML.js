@@ -25,3 +25,21 @@ function generateCards(team) {
     return cards.join(``)
 }
 
+let generateManagerCard = (Manager) => {
+    return `
+    <div class="card m-1 shadow" style="width: 18rem">
+      <div class='card-header'>
+        <h3 class="card-title">${Manager.getName()}</h3>
+        <h6 class="card-text"><i class="fa fa-coffee"></i> ${Manager.getRole()}</h6>
+      </div>
+      
+      <div class="card-body">
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item">ID: ${Manager.getId()}</li>
+          <li class="list-group-item">Email: ${Manager.getEmail()}</li>
+          <li class="list-group-item">Office Number: ${Manager.getOfficeNumber()}</li>
+        </ul>
+      </div>
+    </div>
+    `
+  }
