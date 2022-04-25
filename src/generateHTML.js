@@ -32,7 +32,7 @@ let generateManagerCard = (Manager) => {
         <h3 class="card-title">${Manager.getName()}</h3>
         <h6 class="card-text"><i class="fa fa-coffee"></i> ${Manager.getRole()}</h6>
       </div>
-      
+
       <div class="card-body">
         <ul class="list-group list-group-flush">
           <li class="list-group-item">ID: ${Manager.getId()}</li>
@@ -42,4 +42,23 @@ let generateManagerCard = (Manager) => {
       </div>
     </div>
     `
-  }
+}
+
+let generateEngineerCard = (Engineer) => {
+    return `
+    <div class="card m-1 shadow" style="width: 18rem">
+      <div class='card-header'>
+        <h3 class="card-title">${Engineer.getName()}</h3>
+        <h6 class="card-text"><i class="fa fa-coffee"></i> ${Engineer.getRole()}</h6>
+      </div>
+      
+      <div class="card-body">
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item">ID: ${Engineer.getId()}</li>
+          <li class="list-group-item">Email: ${Engineer.getEmail()}</li>
+          <li class="list-group-item">Office Number: ${Engineer.getOfficeNumber()}</li>
+        </ul>
+      </div>
+    </div>
+    `
+}
