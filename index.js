@@ -99,7 +99,7 @@ const engineerQuestions = () => {
                 internQuestions();
                 break;
             default: 
-            writeToFile('dist/index.html', generateTeam(team))
+            writeToFile('dist/index.html', generateHTML(team))
         }
     })
 };
@@ -146,7 +146,7 @@ const internQuestions = () => {
                 internQuestions();
                 break;
             default:
-                writeToFile('dist/index.html', generateTeam(team))
+                writeToFile('dist/index.html', generateHTML(team))
         }
     })
 }
