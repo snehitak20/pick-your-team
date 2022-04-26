@@ -27,16 +27,16 @@ function generateCards(team) {
 let generateManagerCard = (Manager) => {
     return `
     <div class="card employee-card">
-      <div class='card-header bg-primary text-white'>
+      <div class='card-header bg-success text-white'>
         <h2 class="card-title"> ${Manager.getName()}</h2>
         <h3 class="card-title"> ${Manager.getRole()}</h4>
       </div>
 
         <div class="card-body">
           <ul class="list-group">
-            <li class="list-group-item">ID: ${Manager.getId()}</li>
-            <li class="list-group-item">Email:<a href="mailto:${Manager.getEmail()}"> ${Manager.getEmail()}</a></li>
-            <li class="list-group-item">Office Number: ${Manager.getOfficeNumber()}</li>
+            <li class="list-group-item">ID: ${Manager.getId()} </li>
+            <li class="list-group-item">Email: <a href="mailto:${Manager.getEmail()}"> ${Manager.getEmail()} </a></li>
+            <li class="list-group-item">Office Number: ${Manager.getOfficeNumber()} </li>
           </ul>
         </div>
     </div>
@@ -46,7 +46,7 @@ let generateManagerCard = (Manager) => {
 let generateEngineerCard = (Engineer) => {
     return `
     <div class="card employee-card">
-      <div class='card-header bg-primary text-white'>
+      <div class='card-header bg-warning text-white'>
         <h2 class="card-title"> ${Engineer.getName()}</h2>
         <h3 class="card-title"> ${Engineer.getRole()}</h3>
       </div>
@@ -54,8 +54,8 @@ let generateEngineerCard = (Engineer) => {
       <div class="card-body">
         <ul class="list-group">
           <li class="list-group-item">ID: ${Engineer.getId()}</li>
-          <li class="list-group-item">Email:<a href="mailto:${Engineer.getEmail()}"> ${Engineer.getEmail()} </a></li>
-          <li class="list-group-item">GitHub:<a href="<a href="https://github.com/${Engineer.getGithub()}" target="_blank" rel="noopener noreferrer"> ${Engineer.getGithub()} </a></li>
+          <li class="list-group-item">Email: <a href= "mailto:${Engineer.getEmail()}"> ${Engineer.getEmail()} </a></li>
+          <li class="list-group-item">GitHub: <a href= "https://github.com/${Engineer.getGithub()}" target="_blank" rel="noopener noreferrer"> ${Engineer.getGithub()} </a></li>
         </ul>
       </div>
     </div>
@@ -65,7 +65,7 @@ let generateEngineerCard = (Engineer) => {
 let generateInternCard = (Intern) => {
     return `
     <div class="card employee-card">
-      <div class='card-header bg-primary text-white'>
+      <div class='card-header bg-info text-white'>
         <h2 class="card-title">${Intern.getName()}</h2>
         <h3 class="card-title">${Intern.getRole()}</h3>
       </div>
@@ -73,7 +73,7 @@ let generateInternCard = (Intern) => {
       <div class="card-body">
         <ul class="list-group">
           <li class="list-group-item">ID: ${Intern.getId()}</li>
-          <li class="list-group-item">Email:<a href="mailto:${Intern.getEmail()}">${Intern.getEmail()} </a></li>
+          <li class="list-group-item">Email: <a href= "mailto:${Intern.getEmail()}">${Intern.getEmail()} </a></li>
           <li class="list-group-item">School: ${Intern.getSchool()}</li>
         </ul>
       </div>
@@ -100,8 +100,8 @@ function generateHTML (team) {
     <body>
         <div class=""container fluid">
             <div class="row">
-              <div class="col-12 jumbotron mb-3 team-heading bg-danger">
-                <h1 class="text-center"> Meet The Team</h1>
+              <div class="col-12 jumbotron mb-3 team-heading bg-secondary bg-gradient text-white">
+                <h1 class="text-center"> Meet the Team </h1>
               </div>
              </div>
 
