@@ -98,7 +98,7 @@ function generateHTML (team) {
     </head>
 
     <body>
-        <div class=""container fluid">
+        <div class="container fluid">
             <div class="row">
               <div class="col-12 jumbotron mb-3 team-heading bg-secondary bg-gradient text-white">
                 <h1 class="text-center"> Meet the Team </h1>
