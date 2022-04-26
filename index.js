@@ -1,3 +1,4 @@
+// All required modules 
 const inquirer = require('inquirer');
 const Manager = require('./lib/Manager');
 const Engineer = require('./lib/Engineer')
@@ -9,6 +10,7 @@ const generateHTML = require('./src/generateHTML');
 team = [];
 
 // Manager Questions Here
+// Default here is the manager
 const managerQuestions = () => {
     inquirer.prompt([
         {
@@ -57,6 +59,7 @@ const managerQuestions = () => {
     });
 };
 
+// Engineer Questions Here
 const engineerQuestions = () => {
     inquirer.prompt([
         {
@@ -87,6 +90,9 @@ const engineerQuestions = () => {
         },
     ])
 
+    // Run a promise here 
+    // Pushes the answers into the engineer cards
+    // Otherwise if not engineer, run to intern questions
     .then((engineerAnswers) => {
 
         const engineer = new Engineer(engineerAnswers.id, engineerAnswers.name, engineerAnswers.email, engineerAnswers.github)
@@ -104,6 +110,7 @@ const engineerQuestions = () => {
     })
 };
 
+// Intern questions here 
 const internQuestions = () => {
     inquirer.prompt([
         {

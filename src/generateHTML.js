@@ -1,7 +1,9 @@
+// Required modules for this whole thing to work
 const Manager = require('../lib/Manager');
 const Engineer = require('../lib/Engineer');
 const Intern = require('../lib/Intern');
 
+// Generates the cards and puts them into the appropriate sections
 function generateCards(team) {
   let cards = []
     for(let i = 0; i < team.length; i++) {
@@ -24,6 +26,7 @@ function generateCards(team) {
     return cards.join(``)
 }
 
+// Styling of manager card with relevant info
 let generateManagerCard = (Manager) => {
     return `
     <div class="card employee-card">
@@ -43,6 +46,7 @@ let generateManagerCard = (Manager) => {
   `;
 };
 
+// Styling of engineer card with relevant info 
 let generateEngineerCard = (Engineer) => {
     return `
     <div class="card employee-card">
@@ -62,6 +66,7 @@ let generateEngineerCard = (Engineer) => {
   `;
 };
 
+// Styling of the intern card with relevant info
 let generateInternCard = (Intern) => {
     return `
     <div class="card employee-card">
@@ -81,6 +86,7 @@ let generateInternCard = (Intern) => {
   `;
 };
 
+// actual generation of the index.html page
 function generateHTML (team) {
     console.log(team)
     return `
